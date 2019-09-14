@@ -27,5 +27,5 @@ MM_WEBHOOK_URL="MATTERMOST_WEBHOOK_URL" \
 DATA_DIRECTORY="ABSOLUTE_DIRECTORY_WHERE_PROCESS_CAN_WRITE" \
 ANDROID_PACKAGENAME="Package name of your Android App" \
 IOS_APPID="AppId of your iOS App" \
-node reviewBot.js
+npm start
 ```
