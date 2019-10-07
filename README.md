@@ -18,14 +18,30 @@ A script which keeps track of existing reviews and posts new ones to Mattermost
 
 
 ### Running it
+
+Rename `.env.sample` to `.env` and fill it with appropriate values as given below
+
+```env
+GOOGLE_CLIENT_EMAIL="SOME_EMAIL_CLIENT"
+GOOGLE_CLIENT_PRIVATEKEY="XXX" 
+MM_WEBHOOK_URL="MATTERMOST_WEBHOOK_URL" 
+DATA_DIRECTORY="ABSOLUTE_DIRECTORY_WHERE_PROCESS_CAN_WRITE" 
+ANDROID_PACKAGENAME="Package name of your Android App" 
+IOS_APPID="AppId of your iOS App" 
+```
+
+#### Using Docker & Docker compose
+
+Install [Docker](https://docs.docker.com/install/) & [Docker compose](https://docs.docker.com/compose/install/)
+
+
+```bash
+docker-compse up
+```
+
+#### Manual
+
 ```bash
 npm install
-
-GOOGLE_CLIENT_EMAIL="SOME_EMAIL_CLIENT" \
-GOOGLE_CLIENT_PRIVATEKEY="XXX" \
-MM_WEBHOOK_URL="MATTERMOST_WEBHOOK_URL" \
-DATA_DIRECTORY="ABSOLUTE_DIRECTORY_WHERE_PROCESS_CAN_WRITE" \
-ANDROID_PACKAGENAME="Package name of your Android App" \
-IOS_APPID="AppId of your iOS App" \
 npm start
 ```
